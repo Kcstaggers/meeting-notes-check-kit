@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use this teaching kit, please cite the version you used."
+title: "Meeting Notes Check Kit"
+type: software
+version: 1.0.0
+date-released: 2026-10-23
+authors:
+  - family-names: Staggers
+    given-names: Keith
+repository-code: "https://github.com/Kcstaggers/meeting-notes-check-kit"
+url: "https://Kcstaggers.github.io/meeting-notes-check-kit/"
+license:
+  - MIT
+  - CC-BY-4.0

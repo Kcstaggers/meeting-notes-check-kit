@@ -1,0 +1,13 @@
+{
+  "name": "meeting-notes-check-kit",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "description": "Practice and regression checks for meeting action lists",
+  "license": "SEE LICENSE IN LICENSING.md",
+  "scripts": {
+    "test": "node --test tests/scorer.test.mjs",
+    "validate": "node cli.mjs validate",
+    "prepare-data": "node prepare.mjs"
+  }
+}

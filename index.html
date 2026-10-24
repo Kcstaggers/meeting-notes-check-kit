@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Practice checking meeting action items with twenty paired fictional examples and an evidence-linked answer key.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>Check the meeting action list | Keith Staggers</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="data/cases.js" defer></script>
+  <script src="scorer.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#exercise">Skip to exercise</a>
+  <header><a class="wordmark" href="index.html">Keith Staggers <span>/ Practice tools</span></a><a href="https://github.com/Kcstaggers/meeting-notes-check-kit#readme">Kit instructions</a></header>
+  <main>
+    <section class="intro" aria-labelledby="page-title">
+      <h1 id="page-title">Check the meeting action list.</h1>
+      <p class="lede">Read the notes. Decide what remains open. Check each owner and deadline against the evidence.</p>
+      <p class="facts">20 fictional cases <span>·</span> 10 paired changes <span>·</span> No model connection</p>
+    </section>
+    <details class="rule" open>
+      <summary>The rule for this exercise</summary>
+      <p>Keep explicit assignments or commitments that remain open at the end of the meeting. Leave out suggestions, canceled or completed work, and work that depends on an unmet condition. An explicit assignment counts unless it is disputed or withdrawn. Leave unknown owners and unresolved dates blank.</p>
+      <p>This is a chosen exercise rule. Teams may track proposals and conditional work separately. Short fictional cases do not measure general model accuracy.</p>
+    </details>
+    <section id="exercise" aria-labelledby="case-heading">
+      <div class="case-bar">
+        <div class="case-choice"><label for="case-select">Choose a case</label><select id="case-select"></select></div>
+        <div class="case-actions"><button id="previous" type="button">Previous</button><button id="next" type="button">Next</button><button id="pair" type="button">Open paired case</button></div>
+      </div>
+      <div class="case-heading"><div><p id="case-position" class="small"></p><h2 id="case-heading"></h2></div><button id="copy-prompt" type="button">Download extraction prompt</button></div>
+      <p id="notice" class="notice" role="status" aria-live="polite"></p>
+      <div class="workspace">
+        <section class="notes" aria-labelledby="notes-title"><div class="panel-title"><h3 id="notes-title">Meeting notes</h3><span id="meeting-date" class="small"></span></div><p id="participants" class="small"></p><ol id="transcript"></ol></section>
+        <section class="answer-panel" aria-labelledby="answer-title">
+          <h3 id="answer-title">Your action list</h3>
+          <fieldset class="mode"><legend>How are you checking?</legend><label><input type="radio" name="mode" value="guided" checked> Guided practice</label><label><input type="radio" name="mode" value="extraction"> Review an extraction</label></fieldset>
+          <div id="guided"><p class="hint">Select the tasks that remain open. For each, choose the stated owner(s), a resolvable date and the supporting line numbers.</p><div id="candidate-forms"></div><button id="check-guided" class="primary" type="button">Check my action list</button></div>
+          <div id="extraction" hidden>
+            <p class="hint">Paste a model's JSON response to the downloaded prompt. First match each task to the reference candidate that means the same thing. Owner and deadline claims are checked separately. The tool does not judge task meaning automatically.</p>
+            <label for="raw-answer">Extraction JSON</label><textarea id="raw-answer" spellcheck="false" rows="7" placeholder='{"actions":[{"task":"...","owners":[],"due":null,"evidence":["L1"]}]}'></textarea>
+            <p class="small">Use only these fictional notes. Text stays in this page; nothing is sent or saved remotely.</p>
+            <button id="parse-answer" type="button">Load for review</button><div id="mapped-actions"></div>
+            <button id="check-extraction" class="primary" type="button" disabled>Check reviewed extraction</button>
+          </div>
+        </section>
+      </div>
+      <section id="results" class="results" hidden tabindex="-1" aria-labelledby="result-title"></section>
+      <details id="answer-key"><summary>Reveal the reference and paired change</summary><div id="reference"></div></details>
+      <div class="downloads"><button id="download-case" type="button">Download this case and key</button><button id="download-dataset" type="button">Download all 20 cases</button><button id="download-result" type="button" disabled>Download checked answer</button></div>
+    </section>
+      <section class="use-note"><h2>Use the disagreement.</h2><p>A wrong owner, a fabricated deadline and a missed task are different problems. The report keeps them separate. In extraction mode, a person must confirm task matching; an unfamiliar task stays unresolved until reviewed.</p><p>Try a case, then open its pair. Look for the one line that changes the answer. For prompt comparisons, keep the answers hidden and record the model, date and exact prompt. This kit includes no measured model results.</p><a href="https://github.com/Kcstaggers/meeting-notes-check-kit/blob/main/METHODS.md">Read the scoring method and limits</a></section>
+  </main>
+  <footer><p>Meeting Notes Check Kit · v1.0.0</p><p>Original fictional examples by Keith Staggers, created with AI assistance. Code: MIT. Cases and documentation: CC BY 4.0.</p><p><a href="https://github.com/Kcstaggers/meeting-notes-check-kit/issues/new?template=trial-feedback.md">Report a trial or problem</a> · <a href="https://github.com/Kcstaggers/meeting-notes-check-kit/blob/main/LICENSING.md">Reuse and attribution</a></p></footer>
+  <noscript><p class="notice">JavaScript is needed for the exercise. The downloadable data and Markdown instructions remain readable without it.</p></noscript>
+</body>
+</html>

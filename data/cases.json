@@ -1,0 +1,1467 @@
+{
+  "schema_version": "1.0",
+  "cases": [
+    {
+      "id": "p01-a",
+      "pair_id": "p01",
+      "variant": "A",
+      "title": "An idea on the table",
+      "focus": "suggestion versus commitment",
+      "meeting_date": "2026-11-02",
+      "participants": [
+        "Lila Moreno",
+        "Evan Brooks",
+        "Priya Nair"
+      ],
+      "lines": [
+        {
+          "id": "L1",
+          "speaker": "Lila Moreno",
+          "text": "The catalog preview is next week."
+        },
+        {
+          "id": "L2",
+          "speaker": "Evan Brooks",
+          "text": "We could compare the two cover layouts. I am floating an idea, not taking on a task."
+        },
+        {
+          "id": "L3",
+          "speaker": "Priya Nair",
+          "text": "The proposal to order foil stickers was rejected last week. We are not ordering them."
+        },
+        {
+          "id": "L4",
+          "speaker": "Lila Moreno",
+          "text": "The current product photos are already in the shared folder."
+        }
+      ],
+      "candidates": [
+        {
+          "id": "T1",
+          "task": "Compare the two cover layouts",
+          "expected": {
+            "include": false,
+            "owners": [],
+            "due": null,
+            "evidence": [
+              "L2"
+            ],
+            "explanation": "Evan explicitly describes a suggestion and declines to make a commitment. There is no agreed open task."
+          }
+        },
+        {
+          "id": "T2",
+          "task": "Order foil stickers",
+          "expected": {
+            "include": false,
+            "owners": [],
+            "due": null,
+            "evidence": [
+              "L3"
+            ],
+            "explanation": "The sticker proposal was rejected and remains rejected. Do not turn the mention of an idea into a task."
+          }
+        }
+      ],
+      "pair_change": "Only L2 changes: Evan moves from suggesting a comparison to committing to it. The sticker proposal remains excluded. Variant A has no open actions."
+    },
+    {
+      "id": "p01-b",
+      "pair_id": "p01",
+      "variant": "B",
+      "title": "An idea becomes a commitment",
+      "focus": "suggestion versus commitment",
+      "meeting_date": "2026-11-02",
+      "participants": [
+        "Lila Moreno",
+        "Evan Brooks",
+        "Priya Nair"
+      ],
+      "lines": [
+        {
+          "id": "L1",
+          "speaker": "Lila Moreno",
+          "text": "The catalog preview is next week."
+        },
+        {
+          "id": "L2",
+          "speaker": "Evan Brooks",
+          "text": "I will compare the two cover layouts. I am taking that on."
+        },
+        {
+          "id": "L3",
+          "speaker": "Priya Nair",
+          "text": "The proposal to order foil stickers was rejected last week. We are not ordering them."
+        },
+        {
+          "id": "L4",
+          "speaker": "Lila Moreno",
+          "text": "The current product photos are already in the shared folder."
+        }
+      ],
+      "candidates": [
+        {
+          "id": "T1",
+          "task": "Compare the two cover layouts",
+          "expected": {
+            "include": true,
+            "owners": [
+              "Evan Brooks"
+            ],
+            "due": null,
+            "evidence": [
+              "L2"
+            ],
+            "explanation": "Evan makes a first-person commitment to compare the layouts. No deadline is stated."
+          }
+        },
+        {
+          "id": "T2",
+          "task": "Order foil stickers",
+          "expected": {
+            "include": false,
+            "owners": [],
+            "due": null,
+            "evidence": [
+              "L3"
+            ],
+            "explanation": "The sticker proposal was rejected and remains rejected. Do not turn the mention of an idea into a task."
+          }
+        }
+      ],
+      "pair_change": "Only L2 changes: Evan moves from suggesting a comparison to committing to it. The sticker proposal remains excluded. Variant A has no open actions."
+    },
+    {
+      "id": "p02-a",
+      "pair_id": "p02",
+      "variant": "A",
+      "title": "An agreed task without an owner",
+      "focus": "missing owner versus explicit joint ownership",
+      "meeting_date": "2026-11-03",
+      "participants": [
+        "Mara Singh",
+        "Nina Park",
+        "Owen Diaz"
+      ],
+      "lines": [
+        {
+          "id": "L1",
+          "speaker": "Mara Singh",
+          "text": "The print quote needs verification before we place the order."
+        },
+        {
+          "id": "L2",
+          "speaker": "Mara Singh",
+          "text": "We agree to verify the print quote. The task is open, but no owner has been assigned."
+        },
+        {
+          "id": "L3",
+          "speaker": "Nina Park",
+          "text": "I will archive last month's receipts by 2026-11-05."
+        },
+        {
+          "id": "L4",
+          "speaker": "Owen Diaz",
+          "text": "The quote and receipts are in separate folders."
+        }
+      ],
+      "candidates": [
+        {
+          "id": "T1",
+          "task": "Verify the print quote",
+          "expected": {
+            "include": true,
+            "owners": [],
+            "due": null,
+            "evidence": [
+              "L1",
+              "L2"
+            ],
+            "explanation": "The group explicitly agrees to the task while leaving ownership unassigned. Mara saying the sentence does not make Mara the owner. The order is an event, not a resolvable calendar deadline.",
+            "evidence_sets": [
+              [
+                "L2"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "T2",
+          "task": "Archive last month's receipts",
+          "expected": {
+            "include": true,
+            "owners": [
+              "Nina Park"
+            ],
+            "due": "2026-11-05",
+            "evidence": [
+              "L3"
+            ],
+            "explanation": "Nina commits to archiving the receipts and gives an exact date."
+          }
+        }
+      ],
+      "pair_change": "Only L2 changes: the open task gains two explicit joint owners. Its deadline remains unresolved, and the receipts task does not change."
+    },
+    {
+      "id": "p02-b",
+      "pair_id": "p02",
+      "variant": "B",
+      "title": "Two people share the task",
+      "focus": "missing owner versus explicit joint ownership",
+      "meeting_date": "2026-11-03",
+      "participants": [
+        "Mara Singh",
+        "Nina Park",
+        "Owen Diaz"
+      ],
+      "lines": [
+        {
+          "id": "L1",
+          "speaker": "Mara Singh",
+          "text": "The print quote needs verification before we place the order."
+        },
+        {
+          "id": "L2",
+          "speaker": "Mara Singh",
+          "text": "We agree to verify the print quote. The task is open, and Nina Park and Owen Diaz are jointly responsible."
+        },
+        {
+          "id": "L3",
+          "speaker": "Nina Park",
+          "text": "I will archive last month's receipts by 2026-11-05."
+        },
+        {
+          "id": "L4",
+          "speaker": "Owen Diaz",
+          "text": "The quote and receipts are in separate folders."
+        }
+      ],
+      "candidates": [
+        {
+          "id": "T1",
+          "task": "Verify the print quote",
+          "expected": {
+            "include": true,
+            "owners": [
+              "Nina Park",
+              "Owen Diaz"
+            ],
+            "due": null,
+            "evidence": [
+              "L1",
+              "L2"
+            ],
+            "explanation": "The same agreed task is now explicitly assigned jointly to Nina and Owen. No calendar deadline is given; before placing the order is an unresolved event constraint.",
+            "evidence_sets": [
+              [
+                "L2"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "T2",
+          "task": "Archive last month's receipts",
+          "expected": {
+            "include": true,
+            "owners": [
+              "Nina Park"
+            ],
+            "due": "2026-11-05",
+            "evidence": [
+              "L3"
+            ],
+            "explanation": "Nina commits to archiving the receipts and gives an exact date."
+          }
+        }
+      ],
+      "pair_change": "Only L2 changes: the open task gains two explicit joint owners. Its deadline remains unresolved, and the receipts task does not change."
+    },
+    {
+      "id": "p03-a",
+      "pair_id": "p03",
+      "variant": "A",
+      "title": "A deadline is retained",
+      "focus": "deadline withdrawal without task cancellation",
+      "meeting_date": "2026-11-06",
+      "participants": [
+        "Clara Evans",
+        "Ravi Patel",
+        "Mina Torres"
+      ],
+      "lines": [
+        {
+          "id": "L1",
+          "speaker": "Clara Evans",
+          "text": "Ravi, please send the vendor comparison by 2026-11-09."
+        },
+        {
+          "id": "L2",
+          "speaker": "Ravi Patel",
+          "text": "I have the quotes and will finish the comparison."
+        },
+        {
+          "id": "L3",
+          "speaker": "Clara Evans",
+          "text": "Keep 2026-11-09 as the deadline for that comparison."
+        },
+        {
+          "id": "L4",
+          "speaker": "Mina Torres",
+          "text": "I will update the inventory list. We have not set a date for that update."
+        }
+      ],
+      "candidates": [
+        {
+          "id": "T1",
+          "task": "Send the vendor comparison",
+          "expected": {
+            "include": true,
+            "owners": [
+              "Ravi Patel"
+            ],
+            "due": "2026-11-09",
+            "evidence": [
+              "L1",
+              "L3"
+            ],
+            "explanation": "Clara assigns the comparison to Ravi and then explicitly retains the original deadline.",
+            "evidence_sets": [
+              [
+                "L1"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "T2",
+          "task": "Update the inventory list",
+          "expected": {
+            "include": true,
+            "owners": [
+              "Mina Torres"
+            ],
+            "due": null,
+            "evidence": [
+              "L4"
+            ],
+            "explanation": "Mina commits to the inventory update and explicitly says that no date is set."
+          }
+        }
+      ],
+      "pair_change": "Only L3 changes: the comparison remains open with Ravi, while its deadline changes from 2026-11-09 to unstated."
+    },
+    {
+      "id": "p03-b",
+      "pair_id": "p03",
+      "variant": "B",
+      "title": "A deadline is withdrawn",
+      "focus": "deadline withdrawal without task cancellation",
+      "meeting_date": "2026-11-06",
+      "participants": [
+        "Clara Evans",
+        "Ravi Patel",
+        "Mina Torres"
+      ],
+      "lines": [
+        {
+          "id": "L1",
+          "speaker": "Clara Evans",
+          "text": "Ravi, please send the vendor comparison by 2026-11-09."
+        },
+        {
+          "id": "L2",
+          "speaker": "Ravi Patel",
+          "text": "I have the quotes and will finish the comparison."
+        },
+        {
+          "id": "L3",
+          "speaker": "Clara Evans",
+          "text": "Drop 2026-11-09 as the deadline for that comparison. The task stays open, and we are not setting a replacement date."
+        },
+        {
+          "id": "L4",
+          "speaker": "Mina Torres",
+          "text": "I will update the inventory list. We have not set a date for that update."
+        }
+      ],
+      "candidates": [
+        {
+          "id": "T1",
+          "task": "Send the vendor comparison",
+          "expected": {
+            "include": true,
+            "owners": [
+              "Ravi Patel"
+            ],
+            "due": null,
+            "evidence": [
+              "L1",
+              "L3"
+            ],
+            "explanation": "The comparison remains assigned to Ravi, but Clara withdraws the only deadline without replacing it. Retaining the old date would be incorrect."
+          }
+        },
+        {
+          "id": "T2",
+          "task": "Update the inventory list",
+          "expected": {
+            "include": true,
+            "owners": [
+              "Mina Torres"
+            ],
+            "due": null,
+            "evidence": [
+              "L4"
+            ],
+            "explanation": "Mina commits to the inventory update and explicitly says that no date is set."
+          }
+        }
+      ],
+      "pair_change": "Only L3 changes: the comparison remains open with Ravi, while its deadline changes from 2026-11-09 to unstated."
+    },
+    {
+      "id": "p04-a",
+      "pair_id": "p04",
+      "variant": "A",
+      "title": "A stall sign is still needed",
+      "focus": "later cancellation overrides an assignment",
+      "meeting_date": "2026-11-05",
+      "participants": [
+        "Celeste Young",
+        "Ben Cole",
+        "Asha Reed"
+      ],
+      "lines": [
+        {
+          "id": "L1",
+          "speaker": "Celeste Young",
+          "text": "Ben, please draft the weekend stall sign by 2026-11-07."
+        },
+        {
+          "id": "L2",
+          "speaker": "Ben Cole",
+          "text": "I have the wording for the sign."
+        },
+        {
+          "id": "L3",
+          "speaker": "Asha Reed",
+          "text": "I will count the display stands by 2026-11-06."
+        },
+        {
+          "id": "L4",
+          "speaker": "Celeste Young",
+          "text": "The weekend stall is going ahead. Ben's sign task is still open."
+        },
+        {
+          "id": "L5",
+          "speaker": "Asha Reed",
+          "text": "The stand count is for the stock audit, so I will do it either way."
+        }
+      ],
+      "candidates": [
+        {
+          "id": "T1",
+          "task": "Draft the weekend stall sign",
+          "expected": {
+            "include": true,
+            "owners": [
+              "Ben Cole"
+            ],
+            "due": "2026-11-07",
+            "evidence": [
+              "L1",
+              "L4"
+            ],
+            "explanation": "The sign is explicitly assigned to Ben with a deadline, and the later statement confirms that it remains open.",
+            "evidence_sets": [
+              [
+                "L1"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "T2",
+          "task": "Count the display stands",
+          "expected": {
+            "include": true,
+            "owners": [
+              "Asha Reed"
+            ],
+            "due": "2026-11-06",
+            "evidence": [
+              "L3",
+              "L5"
+            ],
+            "explanation": "Asha commits to the stock-audit count by the stated date and clarifies that it is independent of the stall.",
+            "evidence_sets": [
+              [
+                "L3"
+              ]
+            ]
+          }
+        }
+      ],
+      "pair_change": "Only L4 changes: the sign task is canceled. The separately confirmed stock-audit count remains open."
+    },
+    {
+      "id": "p04-b",
+      "pair_id": "p04",
+      "variant": "B",
+      "title": "A stall sign is canceled",
+      "focus": "later cancellation overrides an assignment",
+      "meeting_date": "2026-11-05",
+      "participants": [
+        "Celeste Young",
+        "Ben Cole",
+        "Asha Reed"
+      ],
+      "lines": [
+        {
+          "id": "L1",
+          "speaker": "Celeste Young",
+          "text": "Ben, please draft the weekend stall sign by 2026-11-07."
+        },
+        {
+          "id": "L2",
+          "speaker": "Ben Cole",
+          "text": "I have the wording for the sign."
+        },
+        {
+          "id": "L3",
+          "speaker": "Asha Reed",
+          "text": "I will count the display stands by 2026-11-06."
+        },
+        {
+          "id": "L4",
+          "speaker": "Celeste Young",
+          "text": "The weekend stall is canceled. Cancel Ben's sign task; no sign is needed."
+        },
+        {
+          "id": "L5",
+          "speaker": "Asha Reed",
+          "text": "The stand count is for the stock audit, so I will do it either way."
+        }
+      ],
+      "candidates": [
+        {
+          "id": "T1",
+          "task": "Draft the weekend stall sign",
+          "expected": {
+            "include": false,
+            "owners": [],
+            "due": null,
+            "evidence": [
+              "L1",
+              "L4"
+            ],
+            "explanation": "The later statement explicitly cancels the assigned sign task. The earlier owner and deadline belong to canceled work and are not current action fields."
+          }
+        },
+        {
+          "id": "T2",
+          "task": "Count the display stands",
+          "expected": {
+            "include": true,
+            "owners": [
+              "Asha Reed"
+            ],
+            "due": "2026-11-06",
+            "evidence": [
+              "L3",
+              "L5"
+            ],
+            "explanation": "Asha commits to the stock-audit count by the stated date and clarifies that it is independent of the stall.",
+            "evidence_sets": [
+              [
+                "L3"
+              ]
+            ]
+          }
+        }
+      ],
+      "pair_change": "Only L4 changes: the sign task is canceled. The separately confirmed stock-audit count remains open."
+    },
+    {
+      "id": "p05-a",
+      "pair_id": "p05",
+      "variant": "A",
+      "title": "A checklist is unfinished",
+      "focus": "completed work versus current open work",
+      "meeting_date": "2026-11-09",
+      "participants": [
+        "Elliot Gray",
+        "Sam Rivera",
+        "Mia Nolan"
+      ],
+      "lines": [
+        {
+          "id": "L1",
+          "speaker": "Elliot Gray",
+          "text": "Sam, the packing checklist is assigned to you for 2026-11-11."
+        },
+        {
+          "id": "L2",
+          "speaker": "Sam Rivera",
+          "text": "The packing checklist is still unfinished. I will complete it by 2026-11-11."
+        },
+        {
+          "id": "L3",
+          "speaker": "Mia Nolan",
+          "text": "I will confirm the courier pickup by 2026-11-10."
+        },
+        {
+          "id": "L4",
+          "speaker": "Elliot Gray",
+          "text": "Friday's dispatch covers twelve parcels."
+        }
+      ],
+      "candidates": [
+        {
+          "id": "T1",
+          "task": "Complete the packing checklist",
+          "expected": {
+            "include": true,
+            "owners": [
+              "Sam Rivera"
+            ],
+            "due": "2026-11-11",
+            "evidence": [
+              "L1",
+              "L2"
+            ],
+            "explanation": "The assigned checklist remains unfinished, and Sam confirms the deadline.",
+            "evidence_sets": [
+              [
+                "L1"
+              ],
+              [
+                "L2"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "T2",
+          "task": "Confirm the courier pickup",
+          "expected": {
+            "include": true,
+            "owners": [
+              "Mia Nolan"
+            ],
+            "due": "2026-11-10",
+            "evidence": [
+              "L3"
+            ],
+            "explanation": "Mia makes an explicit commitment to confirm the pickup by the stated date."
+          }
+        }
+      ],
+      "pair_change": "Only L2 changes: the checklist switches from unfinished to completed. The courier task remains open."
+    },
+    {
+      "id": "p05-b",
+      "pair_id": "p05",
+      "variant": "B",
+      "title": "A checklist is already finished",
+      "focus": "completed work versus current open work",
+      "meeting_date": "2026-11-09",
+      "participants": [
+        "Elliot Gray",
+        "Sam Rivera",
+        "Mia Nolan"
+      ],
+      "lines": [
+        {
+          "id": "L1",
+          "speaker": "Elliot Gray",
+          "text": "Sam, the packing checklist is assigned to you for 2026-11-11."
+        },
+        {
+          "id": "L2",
+          "speaker": "Sam Rivera",
+          "text": "The packing checklist is finished and uploaded. That task is closed."
+        },
+        {
+          "id": "L3",
+          "speaker": "Mia Nolan",
+          "text": "I will confirm the courier pickup by 2026-11-10."
+        },
+        {
+          "id": "L4",
+          "speaker": "Elliot Gray",
+          "text": "Friday's dispatch covers twelve parcels."
+        }
+      ],
+      "candidates": [
+        {
+          "id": "T1",
+          "task": "Complete the packing checklist",
+          "expected": {
+            "include": false,
+            "owners": [],
+            "due": null,
+            "evidence": [
+              "L1",
+              "L2"
+            ],
+            "explanation": "Sam reports that the checklist is finished and the task closed. Do not reopen completed work just because its assignment appears earlier."
+          }
+        },
+        {
+          "id": "T2",
+          "task": "Confirm the courier pickup",
+          "expected": {
+            "include": true,
+            "owners": [
+              "Mia Nolan"
+            ],
+            "due": "2026-11-10",
+            "evidence": [
+              "L3"
+            ],
+            "explanation": "Mia makes an explicit commitment to confirm the pickup by the stated date."
+          }
+        }
+      ],
+      "pair_change": "Only L2 changes: the checklist switches from unfinished to completed. The courier task remains open."
+    },
+    {
+      "id": "p06-a",
+      "pair_id": "p06",
+      "variant": "A",
+      "title": "A condition is still unmet",
+      "focus": "conditional assignment becomes active only when its condition is met",
+      "meeting_date": "2026-11-10",
+      "participants": [
+        "Rosa Chen",
+        "Gabe Mills",
+        "Noor Ali"
+      ],
+      "lines": [
+        {
+          "id": "L1",
+          "speaker": "Rosa Chen",
+          "text": "Gabe, prepare the launch banner only if the venue confirms our booking. If they confirm, the banner is due 2026-11-13."
+        },
+        {
+          "id": "L2",
+          "speaker": "Gabe Mills",
+          "text": "Understood. I will not begin until confirmation arrives."
+        },
+        {
+          "id": "L3",
+          "speaker": "Noor Ali",
+          "text": "I will check the existing sign dimensions by 2026-11-12 regardless of the booking."
+        },
+        {
+          "id": "L4",
+          "speaker": "Rosa Chen",
+          "text": "The venue has not confirmed. The banner condition is still unmet."
+        },
+        {
+          "id": "L5",
+          "speaker": "Gabe Mills",
+          "text": "I have the logo file ready."
+        }
+      ],
+      "candidates": [
+        {
+          "id": "T1",
+          "task": "Prepare the launch banner",
+          "expected": {
+            "include": false,
+            "owners": [],
+            "due": null,
+            "evidence": [
+              "L1",
+              "L4"
+            ],
+            "explanation": "The banner assignment is conditional, and the meeting explicitly says its condition remains unmet. Under this kit's current-open-actions rule, it is not an active task."
+          }
+        },
+        {
+          "id": "T2",
+          "task": "Check the existing sign dimensions",
+          "expected": {
+            "include": true,
+            "owners": [
+              "Noor Ali"
+            ],
+            "due": "2026-11-12",
+            "evidence": [
+              "L3"
+            ],
+            "explanation": "Noor commits to checking the dimensions by the stated date regardless of the booking outcome."
+          }
+        }
+      ],
+      "pair_change": "Only L4 changes: venue confirmation activates Gabe's conditional banner assignment. Noor's unconditional task remains unchanged."
+    },
+    {
+      "id": "p06-b",
+      "pair_id": "p06",
+      "variant": "B",
+      "title": "A condition has been met",
+      "focus": "conditional assignment becomes active only when its condition is met",
+      "meeting_date": "2026-11-10",
+      "participants": [
+        "Rosa Chen",
+        "Gabe Mills",
+        "Noor Ali"
+      ],
+      "lines": [
+        {
+          "id": "L1",
+          "speaker": "Rosa Chen",
+          "text": "Gabe, prepare the launch banner only if the venue confirms our booking. If they confirm, the banner is due 2026-11-13."
+        },
+        {
+          "id": "L2",
+          "speaker": "Gabe Mills",
+          "text": "Understood. I will not begin until confirmation arrives."
+        },
+        {
+          "id": "L3",
+          "speaker": "Noor Ali",
+          "text": "I will check the existing sign dimensions by 2026-11-12 regardless of the booking."
+        },
+        {
+          "id": "L4",
+          "speaker": "Rosa Chen",
+          "text": "The venue confirmed this morning. The banner condition is met."
+        },
+        {
+          "id": "L5",
+          "speaker": "Gabe Mills",
+          "text": "I have the logo file ready."
+        }
+      ],
+      "candidates": [
+        {
+          "id": "T1",
+          "task": "Prepare the launch banner",
+          "expected": {
+            "include": true,
+            "owners": [
+              "Gabe Mills"
+            ],
+            "due": "2026-11-13",
+            "evidence": [
+              "L1",
+              "L4"
+            ],
+            "explanation": "Rosa's conditional assignment names Gabe and a date. The later confirmation satisfies its condition, so the banner is now an active task."
+          }
+        },
+        {
+          "id": "T2",
+          "task": "Check the existing sign dimensions",
+          "expected": {
+            "include": true,
+            "owners": [
+              "Noor Ali"
+            ],
+            "due": "2026-11-12",
+            "evidence": [
+              "L3"
+            ],
+            "explanation": "Noor commits to checking the dimensions by the stated date regardless of the booking outcome."
+          }
+        }
+      ],
+      "pair_change": "Only L4 changes: venue confirmation activates Gabe's conditional banner assignment. Noor's unconditional task remains unchanged."
+    },
+    {
+      "id": "p07-a",
+      "pair_id": "p07",
+      "variant": "A",
+      "title": "The original owner keeps the handoff",
+      "focus": "later reassignment replaces the earlier owner",
+      "meeting_date": "2026-11-13",
+      "participants": [
+        "Isabel Hart",
+        "Theo Kim",
+        "Zara Quinn"
+      ],
+      "lines": [
+        {
+          "id": "L1",
+          "speaker": "Isabel Hart",
+          "text": "Theo, send the draft service menu to the printer by 2026-11-17."
+        },
+        {
+          "id": "L2",
+          "speaker": "Theo Kim",
+          "text": "I can handle that."
+        },
+        {
+          "id": "L3",
+          "speaker": "Zara Quinn",
+          "text": "I will correct the price labels by 2026-11-16."
+        },
+        {
+          "id": "L4",
+          "speaker": "Isabel Hart",
+          "text": "Theo keeps the printer handoff. The due date stays 2026-11-17."
+        },
+        {
+          "id": "L5",
+          "speaker": "Theo Kim",
+          "text": "The printer's contact details are in the shared folder."
+        }
+      ],
+      "candidates": [
+        {
+          "id": "T1",
+          "task": "Send the draft service menu to the printer",
+          "expected": {
+            "include": true,
+            "owners": [
+              "Theo Kim"
+            ],
+            "due": "2026-11-17",
+            "evidence": [
+              "L1",
+              "L4"
+            ],
+            "explanation": "The original assignment and later confirmation both name Theo. The deadline is retained.",
+            "evidence_sets": [
+              [
+                "L1"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "T2",
+          "task": "Correct the price labels",
+          "expected": {
+            "include": true,
+            "owners": [
+              "Zara Quinn"
+            ],
+            "due": "2026-11-16",
+            "evidence": [
+              "L3"
+            ],
+            "explanation": "Zara separately commits to correcting the price labels by the stated date."
+          }
+        }
+      ],
+      "pair_change": "Only L4 changes: Zara replaces Theo as the handoff owner. Zara also retains her separate price-label task."
+    },
+    {
+      "id": "p07-b",
+      "pair_id": "p07",
+      "variant": "B",
+      "title": "The handoff is reassigned",
+      "focus": "later reassignment replaces the earlier owner",
+      "meeting_date": "2026-11-13",
+      "participants": [
+        "Isabel Hart",
+        "Theo Kim",
+        "Zara Quinn"
+      ],
+      "lines": [
+        {
+          "id": "L1",
+          "speaker": "Isabel Hart",
+          "text": "Theo, send the draft service menu to the printer by 2026-11-17."
+        },
+        {
+          "id": "L2",
+          "speaker": "Theo Kim",
+          "text": "I can handle that."
+        },
+        {
+          "id": "L3",
+          "speaker": "Zara Quinn",
+          "text": "I will correct the price labels by 2026-11-16."
+        },
+        {
+          "id": "L4",
+          "speaker": "Isabel Hart",
+          "text": "Zara takes over the printer handoff from Theo. The due date stays 2026-11-17."
+        },
+        {
+          "id": "L5",
+          "speaker": "Theo Kim",
+          "text": "The printer's contact details are in the shared folder."
+        }
+      ],
+      "candidates": [
+        {
+          "id": "T1",
+          "task": "Send the draft service menu to the printer",
+          "expected": {
+            "include": true,
+            "owners": [
+              "Zara Quinn"
+            ],
+            "due": "2026-11-17",
+            "evidence": [
+              "L1",
+              "L4"
+            ],
+            "explanation": "The later statement transfers the printer handoff from Theo to Zara. It does not create joint ownership or change the deadline. The explicit assignment counts under the kit's rule without a separate acceptance line."
+          }
+        },
+        {
+          "id": "T2",
+          "task": "Correct the price labels",
+          "expected": {
+            "include": true,
+            "owners": [
+              "Zara Quinn"
+            ],
+            "due": "2026-11-16",
+            "evidence": [
+              "L3"
+            ],
+            "explanation": "Zara separately commits to correcting the price labels by the stated date."
+          }
+        }
+      ],
+      "pair_change": "Only L4 changes: Zara replaces Theo as the handoff owner. Zara also retains her separate price-label task."
+    },
+    {
+      "id": "p08-a",
+      "pair_id": "p08",
+      "variant": "A",
+      "title": "An assignment is accepted",
+      "focus": "explicit refusal blocks an otherwise clear assignment",
+      "meeting_date": "2026-11-18",
+      "participants": [
+        "Jules Avery",
+        "Finn Lewis",
+        "Keira Stone"
+      ],
+      "lines": [
+        {
+          "id": "L1",
+          "speaker": "Jules Avery",
+          "text": "Finn, please test the new order form by 2026-11-20."
+        },
+        {
+          "id": "L2",
+          "speaker": "Finn Lewis",
+          "text": "I can take that. I will test the order form by 2026-11-20."
+        },
+        {
+          "id": "L3",
+          "speaker": "Jules Avery",
+          "text": "No replacement owner is being assigned in this meeting."
+        },
+        {
+          "id": "L4",
+          "speaker": "Keira Stone",
+          "text": "I will export the existing order list by 2026-11-19."
+        }
+      ],
+      "candidates": [
+        {
+          "id": "T1",
+          "task": "Test the new order form",
+          "expected": {
+            "include": true,
+            "owners": [
+              "Finn Lewis"
+            ],
+            "due": "2026-11-20",
+            "evidence": [
+              "L1",
+              "L2"
+            ],
+            "explanation": "Finn explicitly accepts the assignment and repeats its deadline.",
+            "evidence_sets": [
+              [
+                "L1"
+              ],
+              [
+                "L2"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "T2",
+          "task": "Export the existing order list",
+          "expected": {
+            "include": true,
+            "owners": [
+              "Keira Stone"
+            ],
+            "due": "2026-11-19",
+            "evidence": [
+              "L4"
+            ],
+            "explanation": "Keira commits to exporting the existing list by the stated date."
+          }
+        }
+      ],
+      "pair_change": "Only L2 changes: Finn accepts or explicitly refuses the assignment. In the refusal variant, the unresolved need is not a confirmed current action."
+    },
+    {
+      "id": "p08-b",
+      "pair_id": "p08",
+      "variant": "B",
+      "title": "An assignment is disputed",
+      "focus": "explicit refusal blocks an otherwise clear assignment",
+      "meeting_date": "2026-11-18",
+      "participants": [
+        "Jules Avery",
+        "Finn Lewis",
+        "Keira Stone"
+      ],
+      "lines": [
+        {
+          "id": "L1",
+          "speaker": "Jules Avery",
+          "text": "Finn, please test the new order form by 2026-11-20."
+        },
+        {
+          "id": "L2",
+          "speaker": "Finn Lewis",
+          "text": "I cannot take that assignment. I am unavailable and will not test the order form."
+        },
+        {
+          "id": "L3",
+          "speaker": "Jules Avery",
+          "text": "No replacement owner is being assigned in this meeting."
+        },
+        {
+          "id": "L4",
+          "speaker": "Keira Stone",
+          "text": "I will export the existing order list by 2026-11-19."
+        }
+      ],
+      "candidates": [
+        {
+          "id": "T1",
+          "task": "Test the new order form",
+          "expected": {
+            "include": false,
+            "owners": [],
+            "due": null,
+            "evidence": [
+              "L1",
+              "L2",
+              "L3"
+            ],
+            "explanation": "Finn explicitly refuses the assignment, and no replacement is assigned. Under the kit's rule, a disputed assignment is not a confirmed current action. This does not mean the underlying need was canceled."
+          }
+        },
+        {
+          "id": "T2",
+          "task": "Export the existing order list",
+          "expected": {
+            "include": true,
+            "owners": [
+              "Keira Stone"
+            ],
+            "due": "2026-11-19",
+            "evidence": [
+              "L4"
+            ],
+            "explanation": "Keira commits to exporting the existing list by the stated date."
+          }
+        }
+      ],
+      "pair_change": "Only L2 changes: Finn accepts or explicitly refuses the assignment. In the refusal variant, the unresolved need is not a confirmed current action."
+    },
+    {
+      "id": "p09-a",
+      "pair_id": "p09",
+      "variant": "A",
+      "title": "An old task stays in the archive",
+      "focus": "historical quotation versus a new current assignment",
+      "meeting_date": "2026-11-20",
+      "participants": [
+        "Ada Reyes",
+        "Leon Price",
+        "Tessa Ward"
+      ],
+      "lines": [
+        {
+          "id": "L1",
+          "speaker": "Tessa Ward",
+          "text": "Last month's minutes said, \"Leon will revise the welcome email by 2026-10-30.\" That was a previous-cycle task."
+        },
+        {
+          "id": "L2",
+          "speaker": "Leon Price",
+          "text": "That old task was canceled last month."
+        },
+        {
+          "id": "L3",
+          "speaker": "Ada Reyes",
+          "text": "We are only checking the archive. We are not reopening the welcome-email task."
+        },
+        {
+          "id": "L4",
+          "speaker": "Tessa Ward",
+          "text": "I will rename the archive folder by 2026-11-23."
+        },
+        {
+          "id": "L5",
+          "speaker": "Ada Reyes",
+          "text": "This meeting concerns the November onboarding batch."
+        }
+      ],
+      "candidates": [
+        {
+          "id": "T1",
+          "task": "Revise the welcome email",
+          "expected": {
+            "include": false,
+            "owners": [],
+            "due": null,
+            "evidence": [
+              "L1",
+              "L2",
+              "L3"
+            ],
+            "explanation": "The quoted assignment belongs to an earlier cycle, was canceled, and is explicitly not reopened. A historical quotation is not a current commitment."
+          }
+        },
+        {
+          "id": "T2",
+          "task": "Rename the archive folder",
+          "expected": {
+            "include": true,
+            "owners": [
+              "Tessa Ward"
+            ],
+            "due": "2026-11-23",
+            "evidence": [
+              "L4"
+            ],
+            "explanation": "Tessa makes a new commitment to rename the archive folder by the stated date."
+          }
+        }
+      ],
+      "pair_change": "Only L3 changes: the historical task is either left closed or adopted as a new assignment with a November deadline."
+    },
+    {
+      "id": "p09-b",
+      "pair_id": "p09",
+      "variant": "B",
+      "title": "An old task is reopened",
+      "focus": "historical quotation versus a new current assignment",
+      "meeting_date": "2026-11-20",
+      "participants": [
+        "Ada Reyes",
+        "Leon Price",
+        "Tessa Ward"
+      ],
+      "lines": [
+        {
+          "id": "L1",
+          "speaker": "Tessa Ward",
+          "text": "Last month's minutes said, \"Leon will revise the welcome email by 2026-10-30.\" That was a previous-cycle task."
+        },
+        {
+          "id": "L2",
+          "speaker": "Leon Price",
+          "text": "That old task was canceled last month."
+        },
+        {
+          "id": "L3",
+          "speaker": "Ada Reyes",
+          "text": "We are reopening the welcome-email task now. Leon, revise it by 2026-11-24."
+        },
+        {
+          "id": "L4",
+          "speaker": "Tessa Ward",
+          "text": "I will rename the archive folder by 2026-11-23."
+        },
+        {
+          "id": "L5",
+          "speaker": "Ada Reyes",
+          "text": "This meeting concerns the November onboarding batch."
+        }
+      ],
+      "candidates": [
+        {
+          "id": "T1",
+          "task": "Revise the welcome email",
+          "expected": {
+            "include": true,
+            "owners": [
+              "Leon Price"
+            ],
+            "due": "2026-11-24",
+            "evidence": [
+              "L1",
+              "L2",
+              "L3"
+            ],
+            "explanation": "Ada explicitly reopens the old task, assigns it to Leon, and supplies a new deadline. The October date from the historical quotation no longer controls the task.",
+            "evidence_sets": [
+              [
+                "L3"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "T2",
+          "task": "Rename the archive folder",
+          "expected": {
+            "include": true,
+            "owners": [
+              "Tessa Ward"
+            ],
+            "due": "2026-11-23",
+            "evidence": [
+              "L4"
+            ],
+            "explanation": "Tessa makes a new commitment to rename the archive folder by the stated date."
+          }
+        }
+      ],
+      "pair_change": "Only L3 changes: the historical task is either left closed or adopted as a new assignment with a November deadline."
+    },
+    {
+      "id": "p10-a",
+      "pair_id": "p10",
+      "variant": "A",
+      "title": "Two possible Fridays",
+      "focus": "ambiguous deadline versus resolvable relative date",
+      "meeting_date": "2026-11-30",
+      "participants": [
+        "Nico Bell",
+        "Harper Shaw",
+        "Sofia Tran"
+      ],
+      "lines": [
+        {
+          "id": "L1",
+          "speaker": "Nico Bell",
+          "text": "Harper, please send the equipment list."
+        },
+        {
+          "id": "L2",
+          "speaker": "Harper Shaw",
+          "text": "I will send it on a Friday, either 2026-12-04 or 2026-12-11. I have not chosen which."
+        },
+        {
+          "id": "L3",
+          "speaker": "Sofia Tran",
+          "text": "I will label the spare cables by 2026-12-02."
+        },
+        {
+          "id": "L4",
+          "speaker": "Nico Bell",
+          "text": "Both storage cupboards contain spare cables. The rental desk opens at nine."
+        }
+      ],
+      "candidates": [
+        {
+          "id": "T1",
+          "task": "Send the equipment list",
+          "expected": {
+            "include": true,
+            "owners": [
+              "Harper Shaw"
+            ],
+            "due": null,
+            "evidence": [
+              "L1",
+              "L2"
+            ],
+            "explanation": "Harper accepts the task but leaves two possible dates unresolved. Neither date can be chosen as the deadline, so due is null."
+          }
+        },
+        {
+          "id": "T2",
+          "task": "Label the spare cables",
+          "expected": {
+            "include": true,
+            "owners": [
+              "Sofia Tran"
+            ],
+            "due": "2026-12-02",
+            "evidence": [
+              "L3"
+            ],
+            "explanation": "Sofia commits to labeling the cables by the stated date."
+          }
+        }
+      ],
+      "pair_change": "Only L2 changes: two unresolved candidate dates are replaced by tomorrow, which resolves from the provided meeting date."
+    },
+    {
+      "id": "p10-b",
+      "pair_id": "p10",
+      "variant": "B",
+      "title": "A date anchored to the meeting",
+      "focus": "ambiguous deadline versus resolvable relative date",
+      "meeting_date": "2026-11-30",
+      "participants": [
+        "Nico Bell",
+        "Harper Shaw",
+        "Sofia Tran"
+      ],
+      "lines": [
+        {
+          "id": "L1",
+          "speaker": "Nico Bell",
+          "text": "Harper, please send the equipment list."
+        },
+        {
+          "id": "L2",
+          "speaker": "Harper Shaw",
+          "text": "I will send it tomorrow."
+        },
+        {
+          "id": "L3",
+          "speaker": "Sofia Tran",
+          "text": "I will label the spare cables by 2026-12-02."
+        },
+        {
+          "id": "L4",
+          "speaker": "Nico Bell",
+          "text": "Both storage cupboards contain spare cables. The rental desk opens at nine."
+        }
+      ],
+      "candidates": [
+        {
+          "id": "T1",
+          "task": "Send the equipment list",
+          "expected": {
+            "include": true,
+            "owners": [
+              "Harper Shaw"
+            ],
+            "due": "2026-12-01",
+            "evidence": [
+              "L1",
+              "L2"
+            ],
+            "explanation": "Harper accepts the task and says tomorrow. With the supplied meeting date of 2026-11-30, the deadline resolves to 2026-12-01."
+          }
+        },
+        {
+          "id": "T2",
+          "task": "Label the spare cables",
+          "expected": {
+            "include": true,
+            "owners": [
+              "Sofia Tran"
+            ],
+            "due": "2026-12-02",
+            "evidence": [
+              "L3"
+            ],
+            "explanation": "Sofia commits to labeling the cables by the stated date."
+          }
+        }
+      ],
+      "pair_change": "Only L2 changes: two unresolved candidate dates are replaced by tomorrow, which resolves from the provided meeting date."
+    }
+  ]
+}

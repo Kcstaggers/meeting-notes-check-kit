@@ -1,0 +1,111 @@
+{
+  "version": "1.0.0",
+  "license_scope": "LICENSING.md",
+  "files": [
+    {
+      "path": ".github/ISSUE_TEMPLATE/trial-feedback.md",
+      "sha256": "b2ac6a56b003580d2022e86337b37a5605af4e26d2978043e59c34f5b4e57d13",
+      "bytes": 588
+    },
+    {
+      "path": ".nojekyll",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "CITATION.cff",
+      "sha256": "4e3ccf3ac942ceb6232a6e0fb73e0d5cfa12bafc82fa3e8c54e9b2d68a9a1817",
+      "bytes": 407
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "sha256": "68ad25e378dde37760fea40b799a667c72202077466679d25b8a3b2d37228493",
+      "bytes": 956
+    },
+    {
+      "path": "DATASET-CARD.md",
+      "sha256": "2bcde355bcc77b044c53b808f15b557bfe4420d2ffa7dea09d6e5ad0ba07d02b",
+      "bytes": 3777
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "2ea40a9fb2ef4d00f5d82f533648a718f7889c9a996aa001cd6aa50b260eb1b1",
+      "bytes": 1071
+    },
+    {
+      "path": "LICENSE-CC-BY-4.0.txt",
+      "sha256": "d557539df68e771cc1eedcc91d13f70fca930e508d11eedcafa4b15db49e3744",
+      "bytes": 17023
+    },
+    {
+      "path": "LICENSING.md",
+      "sha256": "a00fabbd4443d70d8818d8c685152bc4c3514a8d2b2cf4587586ec2222384cbb",
+      "bytes": 998
+    },
+    {
+      "path": "METHODS.md",
+      "sha256": "0008f99b07f81393a15c6809af0a4b6753ccb21f35eb9907c0bf3d73ffa157d8",
+      "bytes": 7288
+    },
+    {
+      "path": "README.md",
+      "sha256": "8524ff36a4023959b8be3dd68d09f421943681df56093cbd2857e70e4e95ba89",
+      "bytes": 6494
+    },
+    {
+      "path": "app.js",
+      "sha256": "363a590ec3d430f79fa11287bc68a75f74f20b35e79a48aa5317ebf87d11b896",
+      "bytes": 16785
+    },
+    {
+      "path": "cli.mjs",
+      "sha256": "9680a33cfd91a09e5c341823748f4451ed3cbf52c55227ee56ecba6156ca1a33",
+      "bytes": 2922
+    },
+    {
+      "path": "data/cases.js",
+      "sha256": "6eaf41f42ef6680df445b730dd8ce977b05bfb4a34199a3236c71df8f1ca4161",
+      "bytes": 43852
+    },
+    {
+      "path": "data/cases.json",
+      "sha256": "b548d82430c426d6b3d2f089dab8100f8f0f2ff54f7dd7126d28b8e7b4db9956",
+      "bytes": 43661
+    },
+    {
+      "path": "data/cases.jsonl",
+      "sha256": "1e0e70f9e37a9a2e9e5c2d876e91d179f3fd4b3ecdf84f49821a868ace40807e",
+      "bytes": 27520
+    },
+    {
+      "path": "index.html",
+      "sha256": "4b7689b3f2a6c51208f751b2f88310b7f23d37f2784fb65c61dbae6cb9c6f989",
+      "bytes": 6270
+    },
+    {
+      "path": "package.json",
+      "sha256": "2aa7ab651f380670aef1215c31f49906064361a3d9fbeddef02e6c853d1393aa",
+      "bytes": 372
+    },
+    {
+      "path": "prepare.mjs",
+      "sha256": "2246cb3b3642abb962ca488fa760c0dfe6ae028c66ac86b509098b521c54493a",
+      "bytes": 1094
+    },
+    {
+      "path": "scorer.js",
+      "sha256": "1951b1502d52fe0d75a775c6f4cad3a8c0a07df7fa685e45c0954f1fd7670a2d",
+      "bytes": 24613
+    },
+    {
+      "path": "style.css",
+      "sha256": "506604ceacf69df3e5a96409b757a9241d75c458dbffd9cf8fc87019f8ec47c7",
+      "bytes": 7984
+    },
+    {
+      "path": "tests/scorer.test.mjs",
+      "sha256": "3d5ab1b67ffbe4b101d138f0aefa12089e05287fdf2e4d84de2b1c03ee7c15d6",
+      "bytes": 17516
+    }
+  ]
+}
